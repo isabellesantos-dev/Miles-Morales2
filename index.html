@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miles Morales — Identidade & Representação</title>
+  <meta name="description" content="Site moderno e interativo sobre Miles Morales e a Consciência Negra.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Introdução cinematográfica -->
+  <div id="intro" class="intro">
+    <div class="intro-bg"></div>
+    <div class="intro-overlay"></div>
+    <div class="intro-content">
+      <p class="intro-eyebrow">CONSCIÊNCIA NEGRA • PERSONAGENS FICTÍCIOS</p>
+      <h1 class="intro-title">MILES<br>MORALES</h1>
+      <p class="intro-phrase">"A máscara não muda quem você é."</p>
+    </div>
+    <div class="intro-sweep">
+      <div class="sweep-img"><img src="miles-web-nobg.png" alt="Miles soltando teia"></div>
+      <div class="sweep-web"></div>
+      <div class="sweep-label">THWIP!</div>
+    </div>
+    <button class="intro-skip" id="introSkip">Pular introdução →</button>
+  </div>
+
+  <div id="loader" class="loader">
+    <div class="loader-inner">
+      <div class="loader-spinner"></div>
+      <p>Carregando experiência...</p>
+    </div>
+  </div>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-follower" id="cursorFollower"></div>
+
+  <nav class="nav" id="nav">
+    <div class="nav-logo">
+      <span class="logo-dot"></span>
+      <span class="logo-text">MILES MORALES</span>
+    </div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero">Início</a></li>
+      <li><a href="#origem">Origem</a></li>
+      <li><a href="#consciencia">Consciência</a></li>
+      <li><a href="#poderes">Poderes</a></li>
+      <li><a href="#timeline">Linha do tempo</a></li>
+      <li><a href="#quiz">Quiz</a></li>
+    </ul>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">☰</button>
+  </nav>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-glow glow-1"></div>
+    <div class="hero-glow glow-2"></div>
+    <div class="hero-grid"></div>
+
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        Consciência Negra • Personagens Fictícios
+      </div>
+      <h1 class="hero-title">
+        A máscara não muda<br>
+        <span class="gradient-text">quem você é.</span>
+      </h1>
+      <p class="hero-sub">
+        Miles Morales é mais que um Homem-Aranha. É a prova viva de que representação importa — e de que a força nasce da identidade, não apesar dela.
+      </p>
+      <div class="hero-cta">
+        <a href="#origem" class="btn btn-primary">Explorar história</a>
+        <a href="#quiz" class="btn btn-ghost">Fazer o quiz</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-num" data-target="2011">0</span>
+          <span class="stat-label">Ano de criação</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="2">0</span>
+          <span class="stat-label">Filmes no cinema</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-target="100">0</span>
+          <span class="stat-label">% de representação</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="spider-orb">
+        <div class="orb-ring"></div>
+        <div class="orb-ring ring-2"></div>
+        <div class="orb-core"></div>
+      </div>
+      <div class="floating-chip chip-1">Afro-latino</div>
+      <div class="floating-chip chip-2">Brooklyn</div>
+      <div class="floating-chip chip-3">Representação</div>
+    </div>
+
+    <div class="scroll-hint">
+      <span>role para explorar</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- Origem -->
+  <section id="origem" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">01 / ORIGEM</span>
+        <h2>Quem é Miles Morales?</h2>
+        <p class="section-lead">Um garoto do Brooklyn que carrega duas culturas, um legado e a coragem de ser ele mesmo.</p>
+      </div>
+
+      <div class="cards-grid">
+        <article class="card reveal">
+          <h3>Origem</h3>
+          <p>Criado em 2011 por Brian Michael Bendis e Sara Pichelli, Miles é o primeiro Homem-Aranha afro-latino dos quadrinhos. Filho de pai afro-americano e mãe porto-riquenha.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Poderes únicos</h3>
+          <p>Além dos poderes clássicos do Aranha, Miles tem a <strong>camuflagem</strong> (invisibilidade) e o <strong>toque venenoso</strong> (bioeletricidade).</p>
+        </article>
+        <article class="card reveal">
+          <h3>Cultura viva</h3>
+          <p>Suas roupas, música e gírias refletem o Brooklyn. O uniforme preto e vermelho virou ícone de uma nova geração.</p>
+        </article>
+        <article class="card reveal">
+          <h3>Legado</h3>
+          <p>Miles não substitui Peter Parker — ele <em>expande</em> o mito. Prova que qualquer um pode usar a máscara.</p>
+        </article>
+      </div>
+
+      <div class="quote-card reveal">
+        <div class="quote-mark">"</div>
+        <p class="quote-text">Eu não tenho que ser o Peter. Eu só tenho que ser eu.</p>
+        <div class="quote-author">— Miles Morales</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Consciência -->
+  <section id="consciencia" class="section consciencia">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">02 / CONSCIÊNCIA</span>
+        <h2>Representação é poder</h2>
+        <p class="section-lead">Por que um personagem fictício importa na luta real por representação?</p>
+      </div>
+
+      <div class="split">
+        <div class="split-text reveal">
+          <h3>A máscara como espelho</h3>
+          <p>Durante décadas, super-heróis eram, em sua maioria, brancos. Quando uma criança negra via apenas heróis que não se pareciam com ela, a mensagem implícita era: <em>"você não pode ser o herói da história."</em></p>
+          <p>Miles Morales quebra essa narrativa. Ele é inteligente, corajoso, imperfeito — e negro. Isso permite que milhões de crianças se vejam como protagonistas.</p>
+          <ul class="checklist">
+            <li>Identificação positiva com a própria imagem</li>
+            <li>Quebra de estereótipos sobre juventude negra</li>
+            <li>Celebração da cultura afro-latina</li>
+            <li>Inspiração para novas gerações</li>
+          </ul>
+        </div>
+        <div class="dossier reveal">
+          <div class="dossier-header">DOSSIÊ DO HERÓI</div>
+          <div class="dossier-photo"></div>
+          <div class="dossier-name">Miles G. Morales</div>
+          <div class="dossier-row"><span>Identidade</span><span>Afro-latino</span></div>
+          <div class="dossier-row"><span>Origem</span><span>Brooklyn, NY</span></div>
+          <div class="dossier-row"><span>Pai</span><span>Jefferson Davis</span></div>
+          <div class="dossier-row"><span>Mãe</span><span>Rio Morales</span></div>
+          <div class="dossier-row"><span>Status</span><span class="status">ATIVO</span></div>
+        </div>
+      </div>
+
+      <div class="pillars">
+        <div class="pillar reveal">
+          <div class="pillar-num">01</div>
+          <h4>Visibilidade</h4>
+          <p>Estar nas telas, nas HQs e nos jogos. Ser visto é o primeiro passo para ser respeitado.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-num">02</div>
+          <h4>Autenticidade</h4>
+          <p>Miles não é "um Peter pintado de preto". Tem voz, família e cultura próprias.</p>
+        </div>
+        <div class="pillar reveal">
+          <div class="pillar-num">03</div>
+          <h4>Empoderamento</h4>
+          <p>Mostrar que a força vem da identidade, não apesar dela.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Poderes -->
+  <section id="poderes" class="section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">03 / PODERES</span>
+        <h2>Arsenal de habilidades</h2>
+        <p class="section-lead">Clique em cada poder para explorar o que torna Miles único.</p>
+      </div>
+      <div class="powers-grid">
+        <button class="power-card reveal" data-power="web">
+          <span class="power-name">Teias e agilidade</span>
+        </button>
+        <button class="power-card reveal" data-power="venom">
+          <span class="power-name">Toque venenoso</span>
+        </button>
+        <button class="power-card reveal" data-power="camo">
+          <span class="power-name">Camuflagem</span>
+        </button>
+        <button class="power-card reveal" data-power="sense">
+          <span class="power-name">Sentido aranha</span>
+        </button>
+      </div>
+      <div class="power-display reveal" id="powerDisplay">
+        <div class="power-display-icon" id="powerIcon"></div>
+        <div class="power-display-text">
+          <h3 id="powerTitle">Selecione um poder</h3>
+          <p id="powerDesc">Clique em uma das cartas acima para ver detalhes.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Timeline -->
+  <section id="timeline" class="section timeline-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">04 / CRONOLOGIA</span>
+        <h2>Linha do tempo</h2>
+      </div>
+      <div class="timeline">
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2011</span>
+            <h4>Primeira aparição</h4>
+            <p>Ultimate Fallout #4 — Miles estreia nos quadrinhos da Marvel.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2012</span>
+            <h4>Série própria</h4>
+            <p>Ultimate Comics: Spider-Man consolida o personagem.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2015</span>
+            <h4>Secret Wars</h4>
+            <p>Miles entra no universo principal da Marvel (Terra-616).</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2018</span>
+            <h4>No Aranhaverso</h4>
+            <p>Filme animado vence o Oscar e populariza Miles mundialmente.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2020</span>
+            <h4>Miles Morales: Spider-Man (PS4/PS5)</h4>
+            <p>Jogo solo aclamado, com cultura negra em destaque.</p>
+          </div>
+        </div>
+        <div class="tl-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content">
+            <span class="tl-year">2023</span>
+            <h4>Através do Aranhaverso</h4>
+            <p>Sequência expande o multiverso e a mensagem de identidade.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Quiz -->
+  <section id="quiz" class="section quiz-section">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="tag">05 / QUIZ</span>
+        <h2>Desafio do Aranha</h2>
+        <p class="section-lead">Teste seus conhecimentos sobre Miles e a Consciência Negra.</p>
+      </div>
+      <div class="quiz-box" id="quizBox">
+        <div class="quiz-progress">
+          <div class="quiz-bar-wrap"><div class="quiz-bar" id="quizBar"></div></div>
+          <span class="quiz-counter" id="quizCounter">1 / 6</span>
+        </div>
+        <div id="quizQuestion" class="quiz-question"></div>
+        <div id="quizOptions" class="quiz-options"></div>
+        <div id="quizFeedback" class="quiz-feedback"></div>
+        <button id="quizNext" class="btn btn-primary hidden">Próxima →</button>
+      </div>
+      <div id="quizResult" class="quiz-result hidden">
+        <div class="result-badge" id="resultBadge"></div>
+        <h3 id="resultTitle"></h3>
+        <p id="resultText"></p>
+        <div class="result-score" id="resultScore"></div>
+        <button id="quizRestart" class="btn btn-ghost">Jogar novamente</button>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <p>Projeto escolar • Consciência Negra • Personagens Fictícios</p>
+      <p class="small">Miles Morales © Marvel. Site feito para fins educativos.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
